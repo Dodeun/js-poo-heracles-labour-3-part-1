@@ -56,7 +56,8 @@ class Fighter {
 }
 
 class Hero extends Fighter {
-    constructor() {
+    constructor(name, strength, dexterity, image, x, y) {
+        super(name, strength, dexterity, image, x, y);
         this.weapon = null;
         this.shield = null;
     }

@@ -1,13 +1,6 @@
 /** Part for the starting instanciation */
 /** creating the hero Heracles */
-const heracles = new Fighter(
-    "👨 Heracles",
-    20,
-    6,
-    "./images/heracles.svg",
-    8,
-    5
-);
+const heracles = new Hero("👨 Heracles", 20, 6, "./images/heracles.svg", 8, 5);
 
 /** Creating his weapon and associating it */
 const weapon = new Weapon("sword", 10, "./images/sword.svg");
@@ -18,9 +11,9 @@ const shield = new Shield("shield", 10, "./images/shield.svg");
 heracles.shield = shield;
 
 /** Creating all of his adversaries */
-const bird1 = new Fighter("Bird", 25, 12, "./images/bird.svg", 1, 4);
-const bird2 = new Fighter("Bird", 25, 12, "./images/bird.svg", 1, 5);
-const bird3 = new Fighter("Bird", 25, 12, "./images/bird.svg", 1, 6);
+const bird1 = new Monster("Bird", 25, 12, "./images/bird.svg", 1, 4);
+const bird2 = new Monster("Bird", 25, 12, "./images/bird.svg", 1, 5);
+const bird3 = new Monster("Bird", 25, 12, "./images/bird.svg", 1, 6);
 
 /** Creating the hero section in the html */
 const fighterHtml = new FightersTemplate("fighters");
